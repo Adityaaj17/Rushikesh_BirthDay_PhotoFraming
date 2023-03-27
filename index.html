@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Framing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .frame {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: url("https://thumbs.dreamstime.com/b/scenery-mobile-wallpaper-nature-background-bamboo-portrait-view-scenery-mobile-wallpaper-nature-background-bamboo-113640891.jpg");
+
+            z-index: -10;
+            padding: 50px;
+        }
+
+        img {
+            max-width: 190px;
+            border: 3px solid white;
+            z-index: 50;
+        }
+
+        .PhotoFrame {
+            width: 450px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .centerImage img {
+            min-width: 300px;
+        }
+
+        .centerImage {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin: -60px;
+        }
+
+        .element1 {
+            transform: rotate(-13deg);
+        }
+
+        .element2 {
+            transform: rotate(13deg);
+        }
+
+        .element3 {
+            transform: rotate(13deg);
+        }
+
+        .element3 img {
+            transform: scale(1.1);
+            margin-top: 20px;
+        }
+
+        .element4 {
+            margin-top: 35px;
+            transform: rotate(-13deg);
+        }
+
+        .element4 img {
+            transform: scale(1.3);
+        }
+
+        .Quotes {
+            max-width: 450px;
+            color: gold;
+            font-weight: bolder;
+            margin-top: 60px;
+            font-size: 20px;
+            text-align: justify;
+        }
+        .borderFrame{
+            background: linear-gradient(aqua,lightgreen);
+            padding: 20px;
+            z-index: -50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="borderFrame">
+
+        <div class="frame">
+
+            <div class="PhotoFrame">
+                <div class="element1">
+                    <img src="upperleft.jpg" alt="">
+                </div>
+                <div class="element2">
+                    <img src="./upperright.jpeg" alt="">
+                </div>
+            </div>
+            <div class="centerImage">
+                <img src="./center.jpg" alt="">
+            </div>
+            <div class="PhotoFrame">
+
+                <div class="element3">
+                    <img src="./lowerright.jpg" alt="">
+                </div>
+                <div class="element4">
+                    <img src="./Main_Image.jpeg" alt="">
+                </div>
+            </div>
+            <div class="Quotes">
+                देवाचे आभार मान ज्याने आपली भेट घडवली, आम्हाला एक चांगला आणि हुशार मित्र नाही मिळाला, म्हणुन काय झाल...
+                पण तुला चांगले मित्र मिळाले !
+            </div>
+            <div class="footerText" style="
+        width: 100%;
+        color: white;
+        font-weight: bolder;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        ">
+                To: Rushi <img src="./baburao.jpg" style="
+            width: 50px;
+            border-radius: 50%;
+            margin: 10px;
+            " alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
